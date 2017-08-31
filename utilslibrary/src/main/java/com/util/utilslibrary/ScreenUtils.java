@@ -13,6 +13,9 @@ import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
 
 
+/**
+ * 获取屏幕宽高工具
+ */
 public class ScreenUtils {
 
     private ScreenUtils() {

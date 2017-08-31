@@ -6,6 +6,9 @@ import android.util.TypedValue;
 import android.view.View;
 
 
+/**
+ * 常量转换工具
+ */
 public class SizeUtils {
 
     private SizeUtils() {
