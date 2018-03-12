@@ -7,9 +7,9 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-public class KeyboardUtils {
+public class SoftKeyboardUtils {
 
-    private KeyboardUtils() {
+    private SoftKeyboardUtils() {
         throw new UnsupportedOperationException("u can't fuck me...");
     }
 
