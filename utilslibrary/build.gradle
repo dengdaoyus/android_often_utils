@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 // JitPack Maven
 apply plugin: 'com.github.dcendents.android-maven'
 // Your Group
-group='com.github.dengdaoyus'
+group = 'com.github.dengdaoyus'
 version = "1.0.0" //需更改，这个是Library的版本后，每次更新的时候，版本需要不一样
 
 android {
@@ -35,10 +35,12 @@ dependencies {
     })
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:25.4.0'
-    compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'com.android.support:recyclerview-v7:25.4.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //图片裁剪
     compile 'com.isseiaoki:simplecropview:1.1.4'
-
+    //视屏
+    compile 'com.shuyu:GSYVideoPlayer:4.1.0'
 
 }
 
