@@ -1,13 +1,19 @@
 package com.util.utilslibrary;
 
 import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.Environment;
 
 import java.io.File;
+import java.io.FileFilter;
+import java.util.regex.Pattern;
+
 /**
+ * 手机设备工具
  * Created by Administrator on 2017/6/7 0007.
  */
 
@@ -53,19 +59,56 @@ public class DeviceUtils {
         }
         return model;
     }
-
     /**
-     * 获取设备SD卡是否可用
+     * 获取CPU核心数
+     *
+     * @return CPU核心数
      */
-    public static boolean isSDCardEnable() {
-        return Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState());
+    public static int getNumCores() {
+        try {
+            // 获取本地CPU信息文件
+            File dir = new File("/sys/devices/system/cpu/");
+            // 过滤内部文件集
+            File[] files = dir.listFiles(new FileFilter() {
+
+                @Override
+                public boolean accept(File pathname) {
+                    // 检查文件名匹配cpu0~cpu9
+                    return Pattern.matches("cpu[0-9]", pathname.getName());
+                }
+
+            });
+            // 返回cpu核心数
+            return files.length;
+        }
+        catch (Exception e) {
+            // 异常返回1个核心
+            return 1;
+        }
     }
 
     /**
-     * 获取设备SD卡路径
-     * <p>一般是/storage/emulated/0/
+     * 获取版本号和版本名
+     *
+     * @param context
+     *            上下文
+     * @return 版本号版本名字的数组
      */
-    public static String getSDCardPath() {
-        return Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator;
+    public static String[] getVersion(Context context) {
+        PackageManager pm = context.getPackageManager();
+        try {
+            PackageInfo packageInfo =
+                    pm.getPackageInfo(context.getPackageName(),
+                            PackageManager.GET_CONFIGURATIONS);
+            String[] strs = new String[3];
+            strs[0] = packageInfo.packageName;
+            strs[1] = String.valueOf(packageInfo.versionCode);
+            strs[2] = packageInfo.versionName;
+            return strs;
+        }
+        catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
