@@ -1,1 +1,1 @@
-include ':app', ':utilslibrary', ':lubanlib'
+include ':app', ':utilslibrary', ':lubanlib', ':danmu'
