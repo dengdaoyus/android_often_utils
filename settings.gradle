@@ -1,1 +1,1 @@
-include ':app', ':utilslibrary', ':lubanlib', ':danmu'
+include ':app', ':utilslibrary', ':lubanlib', ':danmu', ':NovateHttp'
