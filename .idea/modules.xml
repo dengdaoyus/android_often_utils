@@ -3,11 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/NovateHttp/NovateHttp.iml" filepath="$PROJECT_DIR$/NovateHttp/NovateHttp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android_often_utils.iml" filepath="$PROJECT_DIR$/android_often_utils.iml" />
+      <module fileurl="file://C:\Users\Administrator\Desktop\android_often_utils-master\NovateHttp\NovateHttp.iml" filepath="C:\Users\Administrator\Desktop\android_often_utils-master\NovateHttp\NovateHttp.iml" />
+      <module fileurl="file://C:\Users\Administrator\Desktop\android_often_utils-master\android_often_utils.iml" filepath="C:\Users\Administrator\Desktop\android_often_utils-master\android_often_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android_often_utils-master.iml" filepath="$PROJECT_DIR$/android_often_utils-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/danmu/danmu.iml" filepath="$PROJECT_DIR$/danmu/danmu.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lubanlib/lubanlib.iml" filepath="$PROJECT_DIR$/lubanlib/lubanlib.iml" />
+      <module fileurl="file://C:\Users\Administrator\Desktop\android_often_utils-master\app\app.iml" filepath="C:\Users\Administrator\Desktop\android_often_utils-master\app\app.iml" />
+      <module fileurl="file://C:\Users\Administrator\Desktop\android_often_utils-master\danmu\danmu.iml" filepath="C:\Users\Administrator\Desktop\android_often_utils-master\danmu\danmu.iml" />
+      <module fileurl="file://C:\Users\Administrator\Desktop\android_often_utils-master\lubanlib\lubanlib.iml" filepath="C:\Users\Administrator\Desktop\android_often_utils-master\lubanlib\lubanlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/utilslibrary/utilslibrary.iml" filepath="$PROJECT_DIR$/utilslibrary/utilslibrary.iml" />
+      <module fileurl="file://C:\Users\Administrator\Desktop\android_often_utils-master\utilslibrary\utilslibrary.iml" filepath="C:\Users\Administrator\Desktop\android_often_utils-master\utilslibrary\utilslibrary.iml" />
     </modules>
   </component>
 </project>
