@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class HttpTestActivity extends AppCompatActivity {
     static final String ASSET_SCHEME = "file:///android_asset/";
     static final String FILE_SCHEME = "file:///";
     Context mContext;
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        mContext = MainActivity.this;
+//        mContext = HttpTestActivity.this;
 //
 //        // String uri = "http://myimagetest.immouo.com/diary/pic/a77738c7-b979-4b70-b119-8f7f364dcde8.jpg";
 //        String uri = "http://myimagetest.immouo.com/diary/pic/fb654c1f-6239-4ee0-a375-6f5344cee92f.jpg";
