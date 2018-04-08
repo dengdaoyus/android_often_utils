@@ -10,11 +10,6 @@
         android:orientation="vertical">
 
 
-
-        <me.xiaopan.sketch.SketchImageView
-            android:id="@+id/sketchimage"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
     </LinearLayout>
 </ScrollView>
 

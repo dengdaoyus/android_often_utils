@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 标题栏 -->
+    <declare-styleable name="TitleBar">
+        <attr name="titleText" format="string" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="titleTextColor" format="color" />
+        <attr name="leftText" format="string" />
+        <attr name="leftTextSize" format="dimension" />
+        <attr name="leftTextColor" format="color" />
+        <attr name="leftIcon" format="reference" />
+        <attr name="leftMarginLeft" format="dimension" />
+        <attr name="rightText" format="string" />
+        <attr name="rightTextSize" format="dimension" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="rightIcon" format="reference" />
+        <attr name="rightMarginRight" format="dimension" />
+    </declare-styleable>
+
+    <!-- 倒计时控件 -->
+    <declare-styleable name="CountDownView">
+        <attr name="duration" format="float" />
+        <attr name="circleColor" format="color" />
+        <attr name="ringColor" format="color" />
+        <attr name="cdvText" format="string" />
+        <attr name="cdvTextSize" format="dimension" />
+        <attr name="cdvTextColor" format="color" />
+    </declare-styleable>
+    <!-- ViewPager 的小圆点-->
+    <declare-styleable name="ViewPagerPoints">
+        <attr name="count" format="integer" />
+        <attr name="currentItem" format="integer" />
+        <attr name="itemBg" format="color|reference" />
+        <attr name="currentItemBg" format="color|reference" />
+        <attr name="itemWidth" format="dimension" />
+        <attr name="itemHeight" format="dimension" />
+        <attr name="currentItemWidth" format="dimension" />
+        <attr name="currentItemHeight" format="dimension" />
+        <attr name="spacing" format="dimension" />
+    </declare-styleable>
+
+    <!-- 可以添加阴影的布局 -->
+    <declare-styleable name="ShadowLayout">
+        <!-- 阴影的颜色,颜色必须带有透明度-->
+        <attr name="shadowColor" format="color" />
+        <!-- 阴影的范围 -->
+        <attr name="shadowRadius" format="dimension" />
+        <!-- 阴影 x 轴的偏移量 -->
+        <attr name="shadowDx" format="dimension" />
+        <!-- 阴影 y 轴的偏移量 -->
+        <attr name="shadowDy" format="dimension" />
+        <!-- 阴影显示的边界 -->
+        <attr name="shadowSide">
+            <flag name="all" value="0x1111" />
+            <flag name="left" value="0x0001" />
+            <flag name="top" value="0x0010" />
+            <flag name="right" value="0x0100" />
+            <flag name="bottom" value="0x1000" />
+        </attr>
+    </declare-styleable>
+
+    <!-- 可以在两边设置图片的开关控件 -->
+    <declare-styleable name="IconSwitchView">
+        <attr name="isw_icon_left" format="reference" />
+        <attr name="isw_icon_right" format="reference" />
+
+        <attr name="isw_icon_size" format="dimension" />
+
+        <!-- 整个控件的背景 -->
+        <attr name="isw_background_color" format="color" />
+        <!-- 左边 icon 选中时的背景色 -->
+        <attr name="isw_thumb_color_left" format="color" />
+        <!-- 右边 icon 选中时的背景色 -->
+        <attr name="isw_thumb_color_right" format="color" />
+        <!-- 左边 icon 未选中时 icon 的颜色 -->
+        <attr name="isw_inactive_tint_icon_left" format="color" />
+        <!-- 右边 icon 未选中时 icon 的颜色 -->
+        <attr name="isw_inactive_tint_icon_right" format="color" />
+        <!-- 左边 icon 选中时 icon 的颜色 -->
+        <attr name="isw_active_tint_icon_left" format="color" />
+        <!-- 右边 icon 选中时 icon 的颜色 -->
+        <attr name="isw_active_tint_icon_right" format="color" />
+
+        <attr name="isw_default_selection" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

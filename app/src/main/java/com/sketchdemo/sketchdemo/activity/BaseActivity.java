@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import butterknife.ButterKnife;
 
+
 /**
  *
  * Created by Administrator on 2018/3/22 0022.
@@ -14,8 +15,8 @@ import butterknife.ButterKnife;
 
 public abstract  class BaseActivity extends AppCompatActivity {
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         onCreateActivity(savedInstanceState);
     }
 
@@ -23,6 +24,7 @@ public abstract  class BaseActivity extends AppCompatActivity {
         setContentView(getLayoutID());
         ButterKnife.bind(this);
         setTitle();
+        initView();
         initData();
         setListener();
     }
@@ -30,6 +32,8 @@ public abstract  class BaseActivity extends AppCompatActivity {
     protected abstract int getLayoutID();
 
     protected abstract void setTitle();
+
+    protected abstract void initView();
 
     protected abstract void initData();
 

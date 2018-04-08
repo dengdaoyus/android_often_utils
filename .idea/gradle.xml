@@ -8,9 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/NovateHttp" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/utilslibrary" />
+            <option value="$PROJECT_DIR$/commonmodule" />
+            <option value="$PROJECT_DIR$/imageloader" />
+            <option value="$PROJECT_DIR$/novatehttp" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -30,40 +30,44 @@
         android:supportsRtl="true"
         android:name=".MyApplication"
         android:theme="@style/AppTheme">
-        <activity android:name=".HttpTestActivity">
+        <!--<activity android:name=".HttpTestActivity">-->
+
+
+            <!--&lt;!&ndash; 应用程序的启动 Intent，我们例子只有一个Activity&ndash;&gt;-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+            <!--&lt;!&ndash; 处理文字的Intent 我们需要定义action, category, 和文字对应的MIME &ndash;&gt;-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.SEND" />-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<data android:mimeType="text/*" />-->
+            <!--</intent-filter>-->
+
+            <!--&lt;!&ndash; 处理单张图片的Intent &ndash;&gt;-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.SEND" />-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<data android:mimeType="image/*" />-->
+            <!--</intent-filter>-->
+
+            <!--&lt;!&ndash; 处理多张图片的Intent &ndash;&gt;-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.SEND_MULTIPLE" />-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<data android:mimeType="image/*" />-->
+            <!--</intent-filter>-->
+
+        <!--</activity>-->
+        <activity android:name=".RippleSpreadTestActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-            <!-- 应用程序的启动 Intent，我们例子只有一个Activity-->
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-            <!-- 处理文字的Intent 我们需要定义action, category, 和文字对应的MIME -->
-            <intent-filter>
-                <action android:name="android.intent.action.SEND" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="text/*" />
-            </intent-filter>
-
-            <!-- 处理单张图片的Intent -->
-            <intent-filter>
-                <action android:name="android.intent.action.SEND" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="image/*" />
-            </intent-filter>
-
-            <!-- 处理多张图片的Intent -->
-            <intent-filter>
-                <action android:name="android.intent.action.SEND_MULTIPLE" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="image/*" />
-            </intent-filter>
-
         </activity>
     </application>
 

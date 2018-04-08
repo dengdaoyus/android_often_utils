@@ -1,1 +1,1 @@
-include ':app', ':utilslibrary', ':NovateHttp'
+include ':app', ':commonmodule', ':novatehttp', ':imageloader'
