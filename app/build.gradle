@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 27
     buildToolsVersion '27.0.3'
@@ -32,7 +33,7 @@ dependencies {
     compile 'com.jakewharton:butterknife:7.0.0'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     compile project(':commonmodule')
-
+    compile project(':novatehttp')
     compile 'com.mindorks.android:placeholderview:1.0.1'
     annotationProcessor 'com.mindorks.android:placeholderview-compiler:1.0.1'
 }

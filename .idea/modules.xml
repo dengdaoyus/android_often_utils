@@ -9,7 +9,7 @@
       <module fileurl="file://C:\Users\Administrator\Desktop\android_often_utils-master\danmu\danmu.iml" filepath="C:\Users\Administrator\Desktop\android_often_utils-master\danmu\danmu.iml" />
       <module fileurl="file://$PROJECT_DIR$/imageloader/imageloader.iml" filepath="$PROJECT_DIR$/imageloader/imageloader.iml" />
       <module fileurl="file://C:\Users\Administrator\Desktop\android_often_utils-master\lubanlib\lubanlib.iml" filepath="C:\Users\Administrator\Desktop\android_often_utils-master\lubanlib\lubanlib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/novatehttp/NovateHttp.iml" filepath="$PROJECT_DIR$/novatehttp/NovateHttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/novatehttp/novatehttp.iml" filepath="$PROJECT_DIR$/novatehttp/novatehttp.iml" />
     </modules>
   </component>
 </project>

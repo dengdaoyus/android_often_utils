@@ -61,13 +61,29 @@
             <!--</intent-filter>-->
 
         <!--</activity>-->
-        <activity android:name=".RippleSpreadTestActivity">
+        <activity android:name=".SocketTestActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <!-- 需要添加下面的intent-filter配置 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="myhost"
+                    android:path="/main"
+                    android:port="1024"
+                    android:scheme="myscheme" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".WebOpenAppActivity2">
+
+
         </activity>
     </application>
 
